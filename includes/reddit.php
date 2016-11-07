@@ -49,11 +49,7 @@ class reddit {
 		}
 	}
 
-	function get_reddit_posts($subreddit,$limit) {
-		/**
-		// -> NASA APOD <-
-		//$json = file_get_contents('https://api.nasa.gov/planetary/apod?hd=true&api_key=gBd2IJHTxgfZzH9TubHpiBPKHuYWjEgacY9LFM67&hd=true');
-		**/ 
+	function get_reddit_posts($subreddit,$limit) {		 
 	
 		$json = file_get_contents("https://www.reddit.com/r/".$subreddit."/.json?limit=".$limit);
 		$posts = json_decode($json, true);
@@ -73,7 +69,7 @@ class reddit {
 		$posts['meta']['subreddit'] = $subreddit;
 		file_put_contents("cache/".$subreddit, serialize($posts));
 		return $posts;
-	} //End of P.O.D f(x)
+	}
 
 	function getCacheAge($subreddit) {
 		$cache = unserialize(file_get_contents("cache/".$subreddit));		
