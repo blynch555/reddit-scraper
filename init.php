@@ -3,5 +3,5 @@
 
 	$reddit = new reddit;
 
-	$posts = $reddit->get_posts($_GET['sub']??'foxes', $_GET['lim']??5,$_GET['override']??null);
-	$cacheAge = $reddit->getCacheAge($_GET['sub']??'foxes');
+	$posts = $reddit->get_posts($_GET['sub']??'NaturePics', $_GET['lim']??5,$_GET['override']??null);
+	$cacheAge = $reddit->getCacheAge($_GET['sub']??'NaturePics');
