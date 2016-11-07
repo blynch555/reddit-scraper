@@ -1,6 +1,5 @@
 <?php
 /**
-
 	PHP reddit posts scraper by cynicalfox47.
 	
 	Website      : https://cynicalfox47.cf
