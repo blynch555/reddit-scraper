@@ -4,12 +4,12 @@
 /* CONFIGURE YOUR LISITNGS BELOW */	
 
 //SET TIMEZONE
-$settings['timezone'] = "GMT+8";
+$settings['timezone']  = "GMT+8";
 
 //GENERAL CONFIGS
 $settings['subreddit'] = $_GET['sub'] ?? "NaturePics";
-$settings['limit'] = $_GET['lim'] ?? 5;
-$settings['override'] = $_GET['override'] ?? null;
+$settings['limit']     = $_GET['lim'] ?? 5;
+$settings['override']  = $_GET['override'] ?? null;
 
 /*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
